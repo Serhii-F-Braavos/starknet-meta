@@ -15,6 +15,7 @@ export const getContractByAddress = (
     address: string
 ): { contract: Contract; project: Project } | undefined => {
     const { contract, project } = contractsMap[normalizeAddress(address)] ?? {};
+    console.log("sdfsdfs");
     if (!contract || !project) {
         return undefined;
     }
